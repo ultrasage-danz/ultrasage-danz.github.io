@@ -57,19 +57,16 @@
     }
 
     #content {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr); /* 2 columns for larger screens */
-      gap: 20px; /* Padding between images */
       max-width: 800px;
       margin: 0 auto;
       padding: 10px;
     }
 
     img {
-      width: 100%; /* Make the image responsive */
+      max-width: 100%; /* Make the image responsive */
       height: auto; /* Maintain aspect ratio */
       display: block;
-      border-radius: 8px; /* Optional: adds rounded corners */
+      margin: 0 auto; /* Center the image */
     }
 
     a {
@@ -86,9 +83,17 @@
     }
 
     @media (max-width: 600px) {
-      #content {
-        grid-template-columns: 1fr; /* Single column for smaller screens */
-        gap: 10px; /* Smaller gap for smaller screens */
+      body {
+        padding: 10px;
+      }
+
+      h1 {
+        font-size: 1.2rem;
+      }
+
+      button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
       }
     }
   </style>
