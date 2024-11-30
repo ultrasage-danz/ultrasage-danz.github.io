@@ -31,23 +31,23 @@
 
     header {
       display: flex;
-      flex-wrap: wrap; /* Allow wrapping on small screens */
+      flex-wrap: wrap;
       justify-content: space-between;
       align-items: center;
-      gap: 10px; /* Space between items for wrapping */
+      gap: 10px;
       margin-bottom: 20px;
     }
 
     h1 {
       margin: 0;
-      font-size: 1.5rem; /* Responsive font size */
-      flex: 1 1 auto; /* Flex item for wrapping behavior */
+      font-size: 1.5rem;
+      flex: 1 1 auto;
     }
 
     button {
       font-family: inherit;
       padding: 10px 20px;
-      font-size: 1rem; /* Responsive button size */
+      font-size: 1rem;
       cursor: pointer;
       border: none;
       border-radius: 5px;
@@ -60,6 +60,13 @@
       max-width: 800px;
       margin: 0 auto;
       padding: 10px;
+    }
+
+    img {
+      max-width: 100%; /* Make the image responsive */
+      height: auto; /* Maintain aspect ratio */
+      display: block;
+      margin: 0 auto; /* Center the image */
     }
 
     a {
@@ -75,19 +82,18 @@
       color: #66b3ff;
     }
 
-    /* Media Queries for Responsiveness */
     @media (max-width: 600px) {
       body {
-        padding: 10px; /* Smaller padding on small screens */
+        padding: 10px;
       }
 
       h1 {
-        font-size: 1.2rem; /* Smaller font size for headings */
+        font-size: 1.2rem;
       }
 
       button {
-        font-size: 0.9rem; /* Adjust button size */
-        padding: 8px 16px; /* Smaller button padding */
+        font-size: 0.9rem;
+        padding: 8px 16px;
       }
     }
   </style>
