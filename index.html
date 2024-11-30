@@ -3,40 +3,117 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Site</title>
+  <title>My GitHub Pages Site</title>
+
+  <!-- Inter Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
   <style>
     :root {
-      --bg-color: #121212;
-      --text-color: #ffffff;
+      --bg-color-light: #ffffff;
+      --text-color-light: #000000;
+      --bg-color-dark: #121212;
+      --text-color-dark: #ffffff;
+
+      --bg-color: var(--bg-color-light);
+      --text-color: var(--text-color-light);
     }
 
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      padding: 20px;
+      font-family: 'Inter', sans-serif;
       background-color: var(--bg-color);
       color: var(--text-color);
+      line-height: 1.6;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    header {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
-      height: 100vh;
-      text-align: center;
+      margin-bottom: 20px;
     }
 
-    a {
-      color: #1e90ff;
-      text-decoration: none;
+    h1 {
+      margin: 0;
     }
 
-    a:hover {
-      text-decoration: underline;
+    button {
+      font-family: inherit;
+      padding: 8px 16px;
+      font-size: 14px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      background: var(--text-color);
+      color: var(--bg-color);
+      transition: background 0.3s, color 0.3s;
+    }
+
+    pre {
+      background: #f4f4f4;
+      padding: 10px;
+      border-radius: 5px;
+      overflow: auto;
+    }
+
+    .dark-mode pre {
+      background: #333;
     }
   </style>
 </head>
 <body>
-  <main>
-    <h1>Welcome to My GitHub Pages Site</h1>
-    <p>This site is now in dark mode. 🌙</p>
-    <p><a href="README.md">Read the README</a></p>
+  <header>
+    <h1>My GitHub Site</h1>
+    <button id="theme-toggle">Toggle Dark Mode</button>
+  </header>
+
+  <main id="content">
+    <p>Loading README...</p>
   </main>
+
+  <script>
+    // Dark Mode Toggle
+    const themeToggle = document.getElementById('theme-toggle');
+    const body = document.body;
+
+    themeToggle.addEventListener('click', () => {
+      body.classList.toggle('dark-mode');
+      updateThemeVariables();
+    });
+
+    function updateThemeVariables() {
+      if (body.classList.contains('dark-mode')) {
+        document.documentElement.style.setProperty('--bg-color', 'var(--bg-color-dark)');
+        document.documentElement.style.setProperty('--text-color', 'var(--text-color-dark)');
+        themeToggle.textContent = 'Switch to Light Mode';
+      } else {
+        document.documentElement.style.setProperty('--bg-color', 'var(--bg-color-light)');
+        document.documentElement.style.setProperty('--text-color', 'var(--text-color-light)');
+        themeToggle.textContent = 'Switch to Dark Mode';
+      }
+    }
+
+    // Fetch README Content
+    async function fetchReadme() {
+      try {
+        const response = await fetch('README.md');
+        if (!response.ok) throw new Error('Failed to load README');
+        const markdown = await response.text();
+
+        // Display as plain text
+        document.getElementById('content').innerHTML = `<pre>${markdown}</pre>`;
+      } catch (error) {
+        document.getElementById('content').innerHTML = '<p>Error loading content.</p>';
+        console.error(error);
+      }
+    }
+
+    // Initialize Theme and Fetch README
+    updateThemeVariables();
+    fetchReadme();
+  </script>
 </body>
 </html>
