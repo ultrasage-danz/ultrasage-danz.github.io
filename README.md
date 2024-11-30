@@ -2,11 +2,11 @@
 
 
 
-- 🔭 I’m currently working on .....
-- 🌱 I’m currently learning Robotics..
-- 👯 I’m looking to collaborate on anything python, web and blockchain
+- 🔭 I’m currently working on **hackathons**
+- 🌱 I’m currently learning **raspberry pi basics**
+- 👯 I’m looking to collaborate on anything **python, web and blockchain**
 - 🤔 I’m looking for help with Open-source projects for beginners and intermediates.
-- 💬 Ask me about Python.
+- 💬 Ask me about **anything**.
 - 👨‍💻 Checkout this Master ML course with scikit-learn: https://courses.dataschool.io/master-machine-learning-with-scikit-learn/vb6ld.
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=ultrasage-danz&show_icons=true&theme=radical)
