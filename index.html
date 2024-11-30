@@ -52,15 +52,22 @@
       transition: background 0.3s, color 0.3s;
     }
 
-    pre {
-      background: #f4f4f4;
-      padding: 10px;
-      border-radius: 5px;
-      overflow: auto;
+    #content {
+      max-width: 800px;
+      margin: 0 auto;
     }
 
-    .dark-mode pre {
-      background: #333;
+    a {
+      color: #1e90ff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .dark-mode a {
+      color: #66b3ff;
     }
   </style>
 </head>
@@ -73,6 +80,9 @@
   <main id="content">
     <p>Loading README...</p>
   </main>
+
+  <!-- Marked.js for Markdown Parsing -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 
   <script>
     // Dark Mode Toggle
@@ -96,15 +106,18 @@
       }
     }
 
-    // Fetch README Content
+    // Fetch README and Render Markdown
     async function fetchReadme() {
       try {
         const response = await fetch('README.md');
         if (!response.ok) throw new Error('Failed to load README');
         const markdown = await response.text();
 
-        // Display as plain text
-        document.getElementById('content').innerHTML = `<pre>${markdown}</pre>`;
+        // Parse Markdown to HTML using Marked.js
+        const htmlContent = marked.parse(markdown);
+
+        // Insert the parsed HTML into the page
+        document.getElementById('content').innerHTML = htmlContent;
       } catch (error) {
         document.getElementById('content').innerHTML = '<p>Error loading content.</p>';
         console.error(error);
