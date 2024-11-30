@@ -18,7 +18,7 @@
   <img height=300 align="center" src="https://github-readme-stats.vercel.app/api?username=ultrasage-danz&show_icons=true&theme=radical" />
 </a>
 <!-- Add vertical gap -->
-<div style="margin: 30px 0;"></div>
+<div style="margin: 30 0;"></div>
 
 <a href="https://github.com/anuraghazra/convoychat">
   <img height=300 align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=ultrasage-danz&show_icons=true&theme=radical&langs_count=7&card_width=800" />
