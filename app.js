@@ -1,8 +1,7 @@
-import { useState, useEffect } from 'react';
-import { Sun, Moon } from 'https://unpkg.com/lucide-react@latest?module';
+const { useState } = React;
 
 function App() {
-  const [isDarkMode, setIsDarkMode] = useState(true);
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
   const languages = [
     { name: 'Jupyter', icon: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/jupyter/jupyter-original.svg' },
@@ -25,17 +24,17 @@ function App() {
     {
       name: 'AI Project',
       description: 'A machine learning project using TensorFlow and scikit-learn',
-      link: 'https://github.com/ultrasage-danz'
+      link: 'https://github.com/ultrasage-danz/ai-project'
     },
     {
       name: 'Blockchain DApp',
       description: 'Decentralized application built with Solidity and Web3.js',
-      link: 'https://github.com/ultrasage-danz'
+      link: 'https://github.com/ultrasage-danz/dapp'
     },
     {
       name: 'Robotics Control',
       description: 'Raspberry Pi based robotics control system',
-      link: 'https://github.com/ultrasage-danz'
+      link: 'https://github.com/ultrasage-danz/robotics'
     }
   ];
 
@@ -44,17 +43,18 @@ function App() {
     document.body.classList.toggle('dark');
   };
 
-  useEffect(() => {
-    document.body.classList.add('dark');
-  }, []);
-
   return (
     <div className="container">
+      <img 
+        className="visitor-badge"
+        src="https://visitor-badge.laobi.icu/badge?page_id=ultrasage-danz.ultrasage-danz" 
+        alt="visitor badge" 
+      />
       
       <header>
         <div className="logo">riles</div>
-        <button onClick={toggleTheme} aria-label={isDarkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode'}>
-          {isDarkMode ? <Sun className="w-6 h-6" /> : <Moon className="w-6 h-6" />}
+        <button onClick={toggleTheme}>
+          {isDarkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
         </button>
       </header>
 
