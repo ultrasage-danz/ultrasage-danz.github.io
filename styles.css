@@ -1,0 +1,18 @@
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+.dark {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+header, main, footer {
+  padding: 1rem;
+}
+
+/* Add more styles as needed */
+
