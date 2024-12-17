@@ -41,20 +41,17 @@ header {
     font-weight: bold;
 }
 
-button {
-    background-color: var(--background-dark);
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-family: 'Inter', sans-serif;
-    transition: opacity 0.3s;
-    
-}
-button.dark{
-        background-color: var(--background-light);
-}
+ button {
+      font-family: inherit;
+      padding: 10px 20px;
+      font-size: 1rem;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      background: var(--text-color);
+      color: var(--bg-color);
+      transition: background 0.3s, color 0.3s;
+    }
 
 button svg {
   width: 24px;
