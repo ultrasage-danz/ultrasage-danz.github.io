@@ -24,17 +24,17 @@ function App() {
     {
       name: 'AI Project',
       description: 'A machine learning project using TensorFlow and scikit-learn',
-      link: 'https://github.com/ultrasage-danz/ai-project'
+      link: 'https://github.com/ultrasage-danz'
     },
     {
       name: 'Blockchain DApp',
       description: 'Decentralized application built with Solidity and Web3.js',
-      link: 'https://github.com/ultrasage-danz/dapp'
+      link: 'https://github.com/ultrasage-danz'
     },
     {
       name: 'Robotics Control',
       description: 'Raspberry Pi based robotics control system',
-      link: 'https://github.com/ultrasage-danz/robotics'
+      link: 'https://github.com/ultrasage-danz'
     }
   ];
 
