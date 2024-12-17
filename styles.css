@@ -42,7 +42,7 @@ header {
 }
 
 button {
-    background-color: var(--background-light);
+    background-color: var(--background-dark);
     color: white;
     border: none;
     padding: 10px 20px;
@@ -51,6 +51,9 @@ button {
     font-family: 'Inter', sans-serif;
     transition: opacity 0.3s;
     
+}
+button.dark{
+        background-color: var(--background-light);
 }
 
 button svg {
