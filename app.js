@@ -1,23 +1,7 @@
-const { useState, useEffect } = React;
+const { useState } = React;
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
-  const [content, setContent] = useState('');
-
-  useEffect(() => {
-    fetchReadme();
-  }, []);
-
-  async function fetchReadme() {
-    try {
-      const response = await fetch('README.md');
-      if (!response.ok) throw new Error('Failed to load README');
-      const markdown = await response.text();
-      setContent(markdown);
-    } catch (error) {
-      console.error(error);
-    }
-  }
 
   const languages = [
     { name: 'Jupyter', icon: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/jupyter/jupyter-original.svg' },
@@ -37,28 +21,52 @@ function App() {
   ];
 
   const projects = [
-    { name: 'AI Project', description: 'A machine learning project using TensorFlow and scikit-learn', link: 'https://github.com/ultrasage-danz/ai-project' },
-    { name: 'Blockchain DApp', description: 'Decentralized application built with Solidity and Web3.js', link: 'https://github.com/ultrasage-danz/dapp' },
-    { name: 'Robotics Control', description: 'Raspberry Pi based robotics control system', link: 'https://github.com/ultrasage-danz/robotics' },
+    {
+      name: 'AI Project',
+      description: 'A machine learning project using TensorFlow and scikit-learn',
+      link: 'https://github.com/ultrasage-danz/ai-project'
+    },
+    {
+      name: 'Blockchain DApp',
+      description: 'Decentralized application built with Solidity and Web3.js',
+      link: 'https://github.com/ultrasage-danz/dapp'
+    },
+    {
+      name: 'Robotics Control',
+      description: 'Raspberry Pi based robotics control system',
+      link: 'https://github.com/ultrasage-danz/robotics'
+    }
   ];
 
+  const toggleTheme = () => {
+    setIsDarkMode(!isDarkMode);
+    document.body.classList.toggle('dark');
+  };
+
   return (
-    <div className={isDarkMode ? 'dark' : ''}>
+    <div className="container">
+      <img 
+        className="visitor-badge"
+        src="https://visitor-badge.laobi.icu/badge?page_id=ultrasage-danz.ultrasage-danz" 
+        alt="visitor badge" 
+      />
+      
       <header>
-        <img align="right" src="https://visitor-badge.laobi.icu/badge?page_id=ultrasage-danz.ultrasage-danz" alt="Visitor Badge" />
-        <h1>riles</h1>
-        <button onClick={() => setIsDarkMode(!isDarkMode)}>
-          Toggle Theme
+        <div className="logo">riles</div>
+        <button onClick={toggleTheme}>
+          {isDarkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
         </button>
       </header>
+
       <main>
         <section>
-          <h1 align="center">
-            <a href="https://git.io/typing-svg">
-              <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=35&pause=1000&color=F7875D&center=true&width=600&lines=Hi+there!;I'm+riles;I'm+a+Software+Engineer...;You+have+a+problem+to+solve%3F;Hit+me+up!" alt="Typing SVG" />
-            </a>
-          </h1>
+          <img 
+            className="typing-svg"
+            src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=35&pause=1000&color=F7875D&center=true&width=600&lines=Hi+there!;I'm+riles;I'm+a+Software+Engineer...;You+have+a+problem+to+solve%3F;Hit+me+up!" 
+            alt="Typing SVG" 
+          />
         </section>
+
         <section>
           <h2>About Me</h2>
           <ul>
@@ -70,34 +78,53 @@ function App() {
             <li>Ask me about <strong>💬Artificial Intelligence, Robotics and Blockchain technologies such as Algorand and Chainlink💬</strong></li>
           </ul>
         </section>
+
         <section>
           <h2>Languages and Tools</h2>
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
+          <div className="tools-grid">
             {languages.map((lang, index) => (
-              <div key={index} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '80px' }}>
-                <img src={lang.icon} alt={lang.name} width="40" height="40" />
-                <span style={{ fontSize: '12px', textAlign: 'center' }}>{lang.name}</span>
+              <div key={index} className="tool-item">
+                <img src={lang.icon} alt={lang.name} />
+                <span>{lang.name}</span>
               </div>
             ))}
           </div>
         </section>
+
         <section>
           <h2>Projects</h2>
-          {projects.map((project, index) => (
-            <div key={index}>
-              <h3>{project.name}</h3>
-              <p>{project.description}</p>
-              <a href={project.link} target="_blank" rel="noopener noreferrer">View Project</a>
-            </div>
-          ))}
+          <div className="projects-grid">
+            {projects.map((project, index) => (
+              <div key={index} className="project-card">
+                <h3>{project.name}</h3>
+                <p>{project.description}</p>
+                <a href={project.link} target="_blank" rel="noopener noreferrer">
+                  View Project
+                </a>
+              </div>
+            ))}
+          </div>
         </section>
+
         <section>
           <h2>GitHub Stats</h2>
-          <img src="https://github-readme-stats.vercel.app/api/top-langs?username=ultrasage-danz&show_icons=true&locale=en&layout=compact&theme=algolia&langs_count=8" alt="Top Languages" />
-          <img src="https://github-readme-stats.vercel.app/api?username=ultrasage-danz&show_icons=true&theme=algolia&locale=en" alt="GitHub Stats" />
-          <img src="https://github-readme-streak-stats.herokuapp.com/?user=ultrasage-danz&theme=algolia" alt="GitHub Streak" />
+          <div className="stats-grid">
+            <img 
+              src="https://github-readme-stats.vercel.app/api/top-langs?username=ultrasage-danz&show_icons=true&locale=en&layout=compact&theme=algolia&langs_count=8" 
+              alt="Top Languages" 
+            />
+            <img 
+              src="https://github-readme-stats.vercel.app/api?username=ultrasage-danz&show_icons=true&theme=algolia&locale=en" 
+              alt="GitHub Stats" 
+            />
+            <img 
+              src="https://github-readme-streak-stats.herokuapp.com/?user=ultrasage-danz&theme=algolia" 
+              alt="GitHub Streak" 
+            />
+          </div>
         </section>
       </main>
+
       <footer>
         <p>&copy; {new Date().getFullYear()} riles. All rights reserved.</p>
       </footer>
