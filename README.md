@@ -3,7 +3,7 @@
 <h1 align="center" >
     <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=35&pause=1000&color=F7875D&center=true&width=600&lines=Hi+there!;I'm+riles;I'm+a+Software+Engineer...;You+have+a+problem+to+solve%3F;Hit+me+up!" alt="Typing SVG" /></a>
 </h1>
-<img align="right" alt="coding" width="400" src="https://cdn.dribbble.com/users/1292677/screenshots/6139167/avento.gif">
+<!-- <img align="right" alt="coding" width="400" src="https://cdn.dribbble.com/users/1292677/screenshots/6139167/avento.gif"> -->
 
 
 - I’m currently working on numerous **Hackathons**.
