@@ -1,9 +1,8 @@
 :root {
-    --primary-color: #3498db;
     --background-light: #ffffff;
     --text-light: #000000;
     --background-dark: #121212;
-    --text-dark: #ecf0f1;
+    --text-dark: #ffffff;
     --border-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -159,6 +158,6 @@ footer {
 }
 
 .dark button {
-    background-color: #2980b9;
+    background-color: #000000;
 }
 
