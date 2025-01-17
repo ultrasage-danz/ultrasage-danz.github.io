@@ -153,7 +153,7 @@ function App() {
 
       <footer>
             <div className="support-section">
-                <p>Support the project:</p>
+                <p>Support for more to come:</p>
                 <div className="support-links">
                 <a 
                     href="https://thanks.dev/ultrasage-danz" 
