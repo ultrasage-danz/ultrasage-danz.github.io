@@ -49,7 +49,6 @@ function App() {
   };
 
   return (
-    <>
     <div className="container">
       <img 
         className="visitor-badge"
@@ -131,35 +130,32 @@ function App() {
         </section>
       </main>
 
-        <footer>
-          <p>&copy; {new Date().getFullYear()} riles. All rights reserved.</p>
-        </footer>
-    </div>
-            
-      <div className="support-section-fixed">
-        <p>Support the Developer</p>
-        <div className="support-links">
-          <a 
+      <footer>
+                <div className="support-section">
+    <p>Support the project:</p>
+    <div className="support-links">
+        <a 
             href="https://thanks.dev/ultrasage-danz" 
             target="_blank" 
             rel="noopener noreferrer"
             className="support-button thanks-dev"
-          >
+        >
             🙏 Support on Thanks.dev
-          </a>
-          <a 
+        </a>
+        <a 
             href="https://www.buymeacoffee.com/ultrasagedanz" 
             target="_blank" 
             rel="noopener noreferrer"
             className="support-button coffee"
-          >
+        >
             ☕ Buy me a coffee
-          </a>
-        </div>
-      </div>
-    </>
+        </a>
+    </div>
+</div>
+            <p>&copy; {new Date().getFullYear()} riles. All rights reserved.</p>
+      </footer>
+    </div>
   );
 }
 
 ReactDOM.render(<App />, document.getElementById('root'));
-
