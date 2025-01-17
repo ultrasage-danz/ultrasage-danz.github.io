@@ -35,6 +35,11 @@ function App() {
       name: 'Robotics Control',
       description: 'Raspberry Pi based robotics control system',
       link: 'https://github.com/ultrasage-danz'
+    },
+    {
+      name: 'SmartCall',
+      description: 'SmartCall is a backend system for a calling application designed to manage and handle real-time voice communications efficiently. The project focuses on building a secure, scalable backend architecture to support high concurrency and manage call data.',
+      link: 'https://github.com/ultrasage-danz'
     }
   ];
 
