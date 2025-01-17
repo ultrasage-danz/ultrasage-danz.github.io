@@ -58,6 +58,27 @@ function App() {
       
       <header>
         <div className="logo">riles</div>
+        <div className="support-section">
+                <p>Support the project:</p>
+                <div className="support-links">
+                <a 
+                    href="https://thanks.dev/ultrasage-danz" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="support-button thanks-dev"
+                >
+                    🙏 Support on Thanks.dev
+                </a>
+                <a 
+                    href="https://www.buymeacoffee.com/ultrasagedanz" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="support-button coffee"
+                >
+                    ☕ Buy me a coffee
+                </a>
+                </div>
+            </div>
         <button onClick={toggleTheme}>
           {isDarkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
         </button>
