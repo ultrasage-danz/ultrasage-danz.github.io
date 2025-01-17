@@ -59,7 +59,7 @@ function App() {
       <header>
         <div className="logo">riles</div>
         <div className="support-section">
-                <p>Support the project:</p>
+                <p>Thank you for your support:</p>
                 <div className="support-links">
                 <a 
                     href="https://thanks.dev/ultrasage-danz" 
