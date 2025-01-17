@@ -131,29 +131,29 @@ function App() {
       </main>
 
       <footer>
-            <div className="support-section">
-                <p>Support the project:</p>
-                <div className="support-links">
-                <a 
-                    href="https://thanks.dev/ultrasage-danz" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="support-button thanks-dev"
-                >
-                    🙏 Support on Thanks.dev
-                </a>
-                <a 
-                    href="https://www.buymeacoffee.com/ultrasagedanz" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="support-button coffee"
-                >
-                    ☕ Buy me a coffee
-                </a>
-                </div>
-            </div>
+                <div className="support-section">
+    <p>Support the project:</p>
+    <div className="support-links">
+        <a 
+            href="https://thanks.dev/ultrasage-danz" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="support-button thanks-dev"
+        >
+            🙏 Support on Thanks.dev
+        </a>
+        <a 
+            href="https://www.buymeacoffee.com/ultrasagedanz" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="support-button coffee"
+        >
+            ☕ Buy me a coffee
+        </a>
+    </div>
+</div>
             <p>&copy; {new Date().getFullYear()} riles. All rights reserved.</p>
-        </footer>
+      </footer>
     </div>
   );
 }
