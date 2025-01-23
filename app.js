@@ -42,7 +42,7 @@ function App() {
       link: 'https://github.com/ultrasage-danz/SmartCall-Lite'
     },
     {
-      name: 'simple-ai-agent',
+      name: 'AI Agent',
       description: 'Agentic Copilot built with LangGraph, CopilotKit, Tavily & Next.js. it will handle user requests by performing multiple search queries and stream the search back with status and results in real-time to the client. ',
       link: 'https://github.com/ultrasage-danz/simple-ai-agent'
     }
