@@ -40,6 +40,11 @@ function App() {
       name: 'SmartCall',
       description: 'SmartCall is a backend system for a calling application designed to manage and handle real-time voice communications efficiently. The project focuses on building a secure, scalable backend architecture to support high concurrency and manage call data.',
       link: 'https://github.com/ultrasage-danz/SmartCall-Lite'
+    },
+    {
+      name: 'simple-ai-agent',
+      description: 'Agentic Copilot built with LangGraph, CopilotKit, Tavily & Next.js. it will handle user requests by performing multiple search queries and stream the search back with status and results in real-time to the client. ',
+      link: 'https://github.com/ultrasage-danz/simple-ai-agent'
     }
   ];
 
