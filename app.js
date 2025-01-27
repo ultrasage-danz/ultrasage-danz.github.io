@@ -44,8 +44,28 @@ function App() {
     {
       name: 'AI Agent',
       description: 'Agentic Copilot built with LangGraph, CopilotKit, Tavily & Next.js. it will handle user requests by performing multiple search queries and stream the search back with status and results in real-time to the client. ',
+      link: 'https://examples-coagents-ai-researcher-ui.vercel.app/'
+    },
+    {
+      name: 'Research Canvas UI',
+      description: 'Research Canvas UI built with LangGraph, CopilotKit, Tavily & Next.js. ',
+      link: 'https://examples-coagents-research-canvas-ui.vercel.app/'
+    },
+    {
+      name: 'AI Travel Agentic Copilot',
+      description: 'AI Travel Agentic Copilot built with LangGraph, CopilotKit, Tavily & Next.js. It is a Travel Planner application with search capabilities using CoAgents. ',
       link: 'https://github.com/ultrasage-danz/simple-ai-agent'
-    }
+    },
+    // {
+    //   name: 'AI Agent',
+    //   description: 'Agentic Copilot built with LangGraph, CopilotKit, Tavily & Next.js. it will handle user requests by performing multiple search queries and stream the search back with status and results in real-time to the client. ',
+    //   link: 'https://github.com/ultrasage-danz/simple-ai-agent'
+    // },
+    // {
+    //   name: 'AI Agent',
+    //   description: 'Agentic Copilot built with LangGraph, CopilotKit, Tavily & Next.js. it will handle user requests by performing multiple search queries and stream the search back with status and results in real-time to the client. ',
+    //   link: 'https://github.com/ultrasage-danz/simple-ai-agent'
+    // }
   ];
 
   const toggleTheme = () => {
