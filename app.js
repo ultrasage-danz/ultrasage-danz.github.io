@@ -54,7 +54,7 @@ function App() {
     {
       name: 'AI Travel Agentic Copilot',
       description: 'AI Travel Agentic Copilot built with LangGraph, CopilotKit, Tavily & Next.js. It is a Travel Planner application with search capabilities using CoAgents. ',
-      link: 'https://github.com/ultrasage-danz/simple-ai-agent'
+      link: 'https://examples-coagents-ai-travel-app.vercel.app/'
     },
     // {
     //   name: 'AI Agent',
