@@ -18,6 +18,7 @@ function App() {
     { name: 'PostgreSQL', icon: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg' },
     { name: 'MongoDB', icon: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg' },
     { name: 'Git', icon: 'https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg' },
+    { name: 'React', icon: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg' },
   ];
 
   const projects = [
@@ -55,6 +56,11 @@ function App() {
       name: 'AI Travel Agentic Copilot',
       description: 'AI Travel Agentic Copilot built with LangGraph, CopilotKit, Tavily & Next.js. It is a Travel Planner application with search capabilities using CoAgents. ',
       link: 'https://examples-coagents-ai-travel-app.vercel.app/'
+    },
+    {
+      name: 'World's Largest Hackathon ',
+      description: 'Landing page for world's largest Hackathon organised by bolt.new ',
+      link: 'https://nimble-genie-5fad2c.netlify.app'
     },
     // {
     //   name: 'AI Agent',
