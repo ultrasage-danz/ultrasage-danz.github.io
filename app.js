@@ -18,7 +18,7 @@ function App() {
     { name: 'PostgreSQL', icon: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg' },
     { name: 'MongoDB', icon: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg' },
     { name: 'Git', icon: 'https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg' },
-    { name: 'React', icon: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg' },
+    { name: 'React', icon: 'https://github.com/vorillaz/devicons/blob/master/%21SVG%2Freact.svg' },
   ];
 
   const projects = [
@@ -58,8 +58,8 @@ function App() {
       link: 'https://examples-coagents-ai-travel-app.vercel.app/'
     },
     {
-      name: 'World's Largest Hackathon ',
-      description: 'Landing page for world's largest Hackathon organised by bolt.new ',
+      name: "World's Largest Hackathon",
+      description: "Landing page for world's largest Hackathon organised by bolt.new ",
       link: 'https://nimble-genie-5fad2c.netlify.app'
     },
     // {
