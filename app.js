@@ -67,6 +67,11 @@ function App() {
       description: "A full-stack web application that automatically generates accurate subtitles for uploaded videos using AssemblyAI’s speech-to-text API. The app features a user-friendly interface for uploading videos, real-time progress feedback, and secure backend processing. Designed for creators and educators, it streamlines the workflow of adding captions, improving accessibility and engagement for video content.",
       link: 'https://video-subtitles-qdxy.onrender.com'
     },
+    {
+      name: "BrandSpark AI",
+      description: "BrandSpark AI is a dynamic web application that instantly transforms a user's business idea into a complete, ready-to-use brand identity. By leveraging the power of Google's latest generative AI models (Gemini and Imagen), it generates a unique company name, a catchy tagline, a custom logo, and a comprehensive set of branding guidelines, including color palette, typography, and brand voice. This tool is designed to empower entrepreneurs and creators by dramatically accelerating the initial branding process from days to seconds.",
+      link: 'https://dev.to/ik_8a78062fd65be769dd835/brandspark-ai-3pb0'
+    },
     // {
     //   name: 'AI Agent',
     //   description: 'Agentic Copilot built with LangGraph, CopilotKit, Tavily & Next.js. it will handle user requests by performing multiple search queries and stream the search back with status and results in real-time to the client. ',
