@@ -62,6 +62,11 @@ function App() {
       description: "Landing page for world's largest Hackathon organised by bolt.new ",
       link: 'https://nimble-genie-5fad2c.netlify.app'
     },
+    {
+      name: "Video Subtitles App",
+      description: "A full-stack web application that automatically generates accurate subtitles for uploaded videos using AssemblyAI’s speech-to-text API. The app features a user-friendly interface for uploading videos, real-time progress feedback, and secure backend processing. Designed for creators and educators, it streamlines the workflow of adding captions, improving accessibility and engagement for video content.",
+      link: 'https://video-subtitles-qdxy.onrender.com'
+    },
     // {
     //   name: 'AI Agent',
     //   description: 'Agentic Copilot built with LangGraph, CopilotKit, Tavily & Next.js. it will handle user requests by performing multiple search queries and stream the search back with status and results in real-time to the client. ',
