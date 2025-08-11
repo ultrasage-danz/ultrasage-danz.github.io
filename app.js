@@ -25,68 +25,80 @@ function App() {
     {
       name: 'AI Project',
       description: 'A machine learning project using TensorFlow and scikit-learn',
-      link: 'https://github.com/ultrasage-danz'
+      link: 'https://github.com/ultrasage-danz',
+      icon: '🤖',
+      type: 'ai'
     },
     {
       name: 'Blockchain DApp',
       description: 'Decentralized application built with Solidity and Web3.js',
-      link: 'https://github.com/ultrasage-danz'
+      link: 'https://github.com/ultrasage-danz',
+      icon: '⛓️',
+      type: 'blockchain'
     },
     {
       name: 'Robotics Control',
       description: 'Raspberry Pi based robotics control system',
-      link: 'https://github.com/ultrasage-danz'
+      link: 'https://github.com/ultrasage-danz',
+      icon: '🤖',
+      type: 'robotics'
     },
     {
       name: 'SmartCall',
       description: 'SmartCall is a backend system for a calling application designed to manage and handle real-time voice communications efficiently. The project focuses on building a secure, scalable backend architecture to support high concurrency and manage call data.',
-      link: 'https://github.com/ultrasage-danz/SmartCall-Lite'
+      link: 'https://github.com/ultrasage-danz/SmartCall-Lite',
+      icon: '📞',
+      type: 'backend'
     },
     {
       name: 'AI Agent',
       description: 'Agentic Copilot built with LangGraph, CopilotKit, Tavily & Next.js. it will handle user requests by performing multiple search queries and stream the search back with status and results in real-time to the client. ',
-      link: 'https://examples-coagents-ai-researcher-ui.vercel.app/'
+      link: 'https://examples-coagents-ai-researcher-ui.vercel.app/',
+      icon: '🔍',
+      type: 'agent'
     },
     {
       name: 'Research Canvas UI',
       description: 'Research Canvas UI built with LangGraph, CopilotKit, Tavily & Next.js. ',
-      link: 'https://examples-coagents-research-canvas-ui.vercel.app/'
+      link: 'https://examples-coagents-research-canvas-ui.vercel.app/',
+      icon: '📊',
+      type: 'research'
     },
     {
       name: 'AI Travel Agentic Copilot',
       description: 'AI Travel Agentic Copilot built with LangGraph, CopilotKit, Tavily & Next.js. It is a Travel Planner application with search capabilities using CoAgents. ',
-      link: 'https://examples-coagents-ai-travel-app.vercel.app/'
+      link: 'https://examples-coagents-ai-travel-app.vercel.app/',
+      icon: '✈️',
+      type: 'travel'
     },
     {
       name: "World's Largest Hackathon",
       description: "Landing page for world's largest Hackathon organised by bolt.new ",
-      link: 'https://nimble-genie-5fad2c.netlify.app'
+      link: 'https://nimble-genie-5fad2c.netlify.app',
+      icon: '🏆',
+      type: 'hackathon'
     },
     {
       name: "Video Subtitles App",
-      description: "A full-stack web application that automatically generates accurate subtitles for uploaded videos using AssemblyAI’s speech-to-text API. The app features a user-friendly interface for uploading videos, real-time progress feedback, and secure backend processing. Designed for creators and educators, it streamlines the workflow of adding captions, improving accessibility and engagement for video content.",
-      link: 'https://video-subtitles-qdxy.onrender.com'
+      description: "A full-stack web application that automatically generates accurate subtitles for uploaded videos using AssemblyAI's speech-to-text API. The app features a user-friendly interface for uploading videos, real-time progress feedback, and secure backend processing. Designed for creators and educators, it streamlines the workflow of adding captions, improving accessibility and engagement for video content.",
+      link: 'https://video-subtitles-qdxy.onrender.com',
+      icon: '🎬',
+      type: 'video'
     },
     {
       name: "BrandSpark AI",
       description: "BrandSpark AI is a dynamic web application that instantly transforms a user's business idea into a complete, ready-to-use brand identity. By leveraging the power of Google's latest generative AI models (Gemini and Imagen), it generates a unique company name, a catchy tagline, a custom logo, and a comprehensive set of branding guidelines, including color palette, typography, and brand voice. This tool is designed to empower entrepreneurs and creators by dramatically accelerating the initial branding process from days to seconds.",
-      link: 'https://dev.to/ik_8a78062fd65be769dd835/brandspark-ai-3pb0'
+      link: 'https://dev.to/ik_8a78062fd65be769dd835/brandspark-ai-3pb0',
+      icon: '✨',
+      type: 'brand'
     },
     {
       name: "Assembly AI Projects",
       description: "These are projects built using Assembly AI API. Ranging from 'Speech To Text' to 'Audio Intelligence' to 'LeMUR(a framework that lets you apply LLMs to audio transcripts) based projects, they will blow your mind !!",
-      link: 'https://github.com/ultrasage-danz/assembly-ai-cookbook-projects'
-    },
-    // {
-    //   name: 'AI Agent',
-    //   description: 'Agentic Copilot built with LangGraph, CopilotKit, Tavily & Next.js. it will handle user requests by performing multiple search queries and stream the search back with status and results in real-time to the client. ',
-    //   link: 'https://github.com/ultrasage-danz/simple-ai-agent'
-    // },
-    // {
-    //   name: 'AI Agent',
-    //   description: 'Agentic Copilot built with LangGraph, CopilotKit, Tavily & Next.js. it will handle user requests by performing multiple search queries and stream the search back with status and results in real-time to the client. ',
-    //   link: 'https://github.com/ultrasage-danz/simple-ai-agent'
-    // }
+      link: 'https://github.com/ultrasage-danz/assembly-ai-cookbook-projects',
+      icon: '🎙️',
+      type: 'assembly'
+    }
   ];
 
   const toggleTheme = () => {
@@ -136,7 +148,7 @@ function App() {
           <div className="tools-grid">
             {languages.map((lang, index) => (
               <div key={index} className="tool-item">
-                <img src={lang.icon} alt={lang.name} />
+                <img src={lang.icon || "/placeholder.svg"} alt={lang.name} />
                 <span>{lang.name}</span>
               </div>
             ))}
@@ -148,10 +160,13 @@ function App() {
           <div className="projects-grid">
             {projects.map((project, index) => (
               <div key={index} className="project-card">
+                <div className={`project-icon ${project.type}`}>
+                  {project.icon}
+                </div>
                 <h3>{project.name}</h3>
                 <p>{project.description}</p>
-                <a href={project.link} target="_blank" rel="noopener noreferrer">
-                  View Project
+                <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link">
+                  Build this
                 </a>
               </div>
             ))}
