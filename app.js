@@ -166,7 +166,7 @@ function App() {
                 <h3>{project.name}</h3>
                 <p>{project.description}</p>
                 <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link">
-                  Build this
+                  View this
                 </a>
               </div>
             ))}
