@@ -137,7 +137,7 @@ function App() {
             <li>I'm currently working on numerous <strong>Hackathons</strong>.</li>
             <li>I'm currently learning <strong>Rust</strong> and <strong>Raspberry pi</strong></li>
             <li>Checkout this Master ML course with scikit-learn: <a href="https://courses.dataschool.io/master-machine-learning-with-scikit-learn/vb6ld">Master ML course</a></li>
-            <li>All of my projects are available at <a href="https://github.com/ultrasage-danz">👨‍💻riles GitHub👨‍💻</a></li>
+            <li>All of my projects are available at <a href="https://github.com/ultrasage-danz">👨‍💻GitHub👨‍💻</a></li>
             <li>Fun fact <strong>⚡I love travelling⚡</strong></li>
             <li>Ask me about <strong>💬Artificial Intelligence, Robotics and Blockchain technologies such as Algorand and Chainlink💬</strong></li>
           </ul>
