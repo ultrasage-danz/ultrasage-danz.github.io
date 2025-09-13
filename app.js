@@ -126,7 +126,7 @@ function App() {
         <section>
           <img 
             className="typing-svg"
-            src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=35&pause=1000&color=F7875D&center=true&width=600&lines=Hi+there!;I'm+"ultrasage-danz";I'm+a+Software+Engineer...;You+have+a+problem+to+solve%3F;Hit+me+up!" 
+            src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=35&pause=1000&color=F7875D&center=true&width=600&lines=Hi+there!;I'm+'ultrasage-danz';I'm+a+Software+Engineer...;You+have+a+problem+to+solve%3F;Hit+me+up!" 
             alt="Typing SVG" 
           />
         </section>
