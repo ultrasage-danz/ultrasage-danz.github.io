@@ -14,7 +14,7 @@
 
 - Checkout this Master ML course with scikit-learn: https://courses.dataschool.io/master-machine-learning-with-scikit-learn/vb6ld.
 
-- All of my projects are available at [👨‍💻riles GitHub👨‍💻](https://github.com/ultrasage-danz)
+- All of my projects are available at [👨‍💻 GitHub👨‍💻](https://github.com/ultrasage-danz)
 
 - Fun fact **⚡I love travelling⚡**
   
