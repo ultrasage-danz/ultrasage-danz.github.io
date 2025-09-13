@@ -115,7 +115,7 @@ function App() {
       />
       
       <header>
-        <div className="logo">ultrasage-danz</div>
+        <h2>ultrasage-danz</h2>
         
         <button onClick={toggleTheme}>
           {isDarkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
