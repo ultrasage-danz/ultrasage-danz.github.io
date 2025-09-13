@@ -214,7 +214,7 @@ function App() {
                 </a>
                 </div>
             </div>
-            <p>&copy; {new Date().getFullYear()} riles. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} ultrasage-danz. All rights reserved.</p>
         </footer>
     </div>
   );
